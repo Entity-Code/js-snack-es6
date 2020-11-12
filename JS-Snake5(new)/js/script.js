@@ -11,14 +11,9 @@ const arrayObj = [
 
 console.log(arrayObj);
 
-//copia
+const filteredObj = arrayObj.filter((element) => filteredObj.push(filteredObj.position = randomWord() ));
 
-const copiaArrayObj = [...arrayObj]
-console.log(copiaArrayObj);
-
-for (var i = 0; i < copiaArrayObj.length; i++) {
-   copiaArrayObj[i].position = randomWord();
-}
+console.log(filteredObj);
 
 
 
