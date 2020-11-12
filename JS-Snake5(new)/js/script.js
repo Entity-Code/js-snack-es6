@@ -9,11 +9,12 @@ const arrayObj = [
   {name: 'Jenny', type: 'borsa', color: 'pink'},
 ];
 
+
+const filteredObj = arrayObj.map(x => x.position = randomWord());
+
 console.log(arrayObj);
 
-const filteredObj = arrayObj.filter((element) => filteredObj.push(filteredObj.position = randomWord() ));
 
-console.log(filteredObj);
 
 
 
