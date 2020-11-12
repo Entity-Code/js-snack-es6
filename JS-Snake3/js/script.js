@@ -32,21 +32,23 @@ const squadre =
 ];
 
 // Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti
-// consegna 12.25
 
-//conversione function normale in una fun arrow
-randomNum = (max) => {
+squadre.forEach((x) => {
+   x["punti fatti"] = randomNum(10);
+   x["falli subiti"] = randomNum(10);
+});
+
+console.log(squadre);
+
+
+
+
+
+// random Num
+function randomNum(max) {
    if (max) { //se max è stato inserito, allora ritornami il valore random
    return Math.floor(Math.random() * max);
- } else { //sennò 0
+} else { //sennò 0
       return 0;
    }
 }
-
-for (let i = 0; i < squadre.length; i++) {
-   squadre[i]["punti fatti"] = randomNum(10);
-   squadre[i]["falli subiti"] = randomNum(10);
-}
-
-
-console.log(squadre);
