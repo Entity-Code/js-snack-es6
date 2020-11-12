@@ -29,13 +29,8 @@ var menoPesante = listaBici[0];
 listaBici.forEach((x) => {
    if (menoPesante.peso > x.peso) {
       menoPesante = x;
-   }
+   } 
 });
 
-// for (let i = 0; i < listaBici.length; i++) {
-//    if (menoPesante.peso > listaBici[i].peso) {
-//       menoPesante = listaBici[i];
-//    }
-// }
 
 console.log("La bici meno pesante è: " , menoPesante);
