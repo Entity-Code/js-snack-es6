@@ -20,7 +20,7 @@ var a = parseInt(prompt("Inserisci un numero tra 0 e 6"));
 var b = parseInt(prompt("Inserisci un altro numero tra 0 e 6"));
 
 const myArray2 = myArray.filter((element, index) => {
-   return element[index] > a && element[index] < b;
+   return index > a && index < b;
 });
 
 console.log(myArray2);
