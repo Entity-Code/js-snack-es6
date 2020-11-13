@@ -10,12 +10,12 @@ const arrayObj = [
 ];
 
 
-const filteredObj = arrayObj.map(x => {
+const mappedObj = arrayObj.map(x => {
    return {...x, position: randomWord()}
 });
 
 console.log(arrayObj);
-console.log(filteredObj);
+console.log(mappedObj);
 
 
 
